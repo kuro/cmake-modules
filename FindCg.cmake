@@ -1,11 +1,14 @@
 find_path(CG_INCLUDE_DIR
     NAMES Cg/cg.h
+    PATHS
+    /opt/nvidia-cg-toolkit/include
     )
 
 find_library(CG_LIBRARY
     NAMES Cg 
     PATHS
     /usr/lib
+    /opt/nvidia-cg-toolkit/lib
     )
 
 find_library(
@@ -13,6 +16,7 @@ find_library(
     NAMES CgGL
     PATHS
     /usr/lib 
+    /opt/nvidia-cg-toolkit/lib
     )
 
 if (APPLE)

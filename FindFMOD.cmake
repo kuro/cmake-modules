@@ -17,19 +17,19 @@ find_path(FMOD_EVENT_INCLUDE_DIR
 
 if (UNIX)
     find_library(FMOD_LIBRARY
-        NAMES fmodex
+        NAMES fmodex64 fmodex
         PATHS
         /opt/fmodex/api/lib
         "/Developer/FMOD Programmers API Mac/api/lib"
         )
     find_library(FMOD_EVENT_LIBRARY
-        NAMES fmodevent
+        NAMES fmodevent64 fmodevent
         PATHS
         /opt/fmodex/fmoddesignerapi/api/lib
         "/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/lib"
         )
     find_library(FMOD_EVENT_NET_LIBRARY
-        NAMES fmodeventnet
+        NAMES fmodeventnet64 fmodeventnet
         PATHS
         /opt/fmodex/fmoddesignerapi/api/lib
         "/Developer/FMOD Programmers API Mac/fmoddesignerapi/api/lib"
