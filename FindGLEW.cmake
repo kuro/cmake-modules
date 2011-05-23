@@ -8,7 +8,7 @@ find_program(GLEWINFO_PROGRAM
     )
 
 find_library(GLEW_LIBRARY
-    NAMES glew
+    NAMES GLEW
     )
 
 if (GLEW_LIBRARY AND GLEW_INCLUDE_DIR)
